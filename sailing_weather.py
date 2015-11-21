@@ -26,7 +26,6 @@ def main():
     json_resp = r.json()                # Convert response to JSON
     raw_forecasts = json_resp["list"]   # List of day forecasts (raw)
 
-    sailing_weather = True   # Set to false if weather condition checks fail
     sailing_days = []        # Result set of good sailing days
     
     for day in raw_forecasts:
